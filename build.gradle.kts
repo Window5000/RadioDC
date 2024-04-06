@@ -2,10 +2,17 @@ plugins {
     kotlin("jvm") version "1.9.23"
     id ("org.openapi.generator") version "7.2.0"
     id("com.github.johnrengelman.shadow") version "8.1.1"
+    application
 }
 
 group = "me.window"
 version = "1.0-SNAPSHOT"
+
+application {
+    applicationName = "RadioDC"
+    mainModule = "radiodc.main"
+    mainClass = "me.window.MainKt"
+}
 
 repositories {
     mavenCentral()
