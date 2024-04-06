@@ -138,6 +138,8 @@ class Main(private val playerManager: AudioPlayerManager, private val player: Au
                 )
                 builder.addField("leave", "Leave the call", false)
 
+                builder.setFooter("Use radio.garden to find stations!")
+
                 event.replyEmbeds(builder.build())
                     .queue()
             }
