@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version "1.9.23"
     id ("org.openapi.generator") version "7.2.0"
+    id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
 group = "me.window"
